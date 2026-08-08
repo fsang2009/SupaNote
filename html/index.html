@@ -8,24 +8,33 @@
     <title>Sign Up </title>
 </head>
 <body>
-    <section class ="registration-box">
+    <section class ="main" class ="main-body"><!--Split left and right side using display: grid;-->
 
-        <div class = "input-area">
-            <label for="email-input" class ="registration-input-label"></label>
-            <input placeholder="Enter Email" id ="email-input" class ="registration-input-box">
-        </div>
-        <div class ="error-messsge" id ="email-error-message-box"></div>
+        <section class ="sign-up-page-left"> <!--Left side of page-->
+            <section class ="">
+            </section>
+        </section>       
 
-        <div class = "input-area">
-            <label for ="password-input" class ="registration-input-label" class ="registration-input-box"></label> 
-            <input placeholder ="Enter Password" id = "password-input">
-        </div>
-         <div class ="error-messsge" id ="password-error-message-box"></div>
+        <section class ="registration-box"> <!--Right side of page-->
 
-        <button class ="sign-up-confirm-button" id ="sign-up-confirm-button">
-            Sign Up
-        </button>
-         <div class ="error-messsge" id ="sign-up-error-message-box"></div>
+            <div class = "input-area">
+                <label for="email-input" class ="registration-input-label"></label>
+                <input placeholder="Enter Email" id ="email-input" class ="registration-input-box">
+            </div>
+            <div class ="error-messsge" id ="email-error-message-box"></div>
+
+            <div class = "input-area">
+                <label for ="password-input" class ="registration-input-label" class ="registration-input-box"></label> 
+                <input placeholder ="Enter Password" id = "password-input">
+            </div>
+            <div class ="error-messsge" id ="password-error-message-box"></div>
+
+            <button class ="sign-up-confirm-button" id ="sign-up-confirm-button">
+                Sign Up
+            </button>
+            <div class ="error-messsge" id ="sign-up-error-message-box"></div>
+
+        </section>
 
     </section>
 </body>

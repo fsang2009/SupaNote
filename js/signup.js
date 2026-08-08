@@ -1,5 +1,6 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "./firebaseConfig.js";
+import { auth,database } from "./firebaseConfig.js";
+import { getDoc, doc, setDoc,  } from "@firebase/firestore";
 
 const userSetEmail = document.querySelector('#email-input');
 const userSetPassword = document.querySelector('#password-input');
@@ -15,8 +16,19 @@ signUpButton.addEventListener('click', async()=>{
             userEmail,
             userPassword
         )
-        const user = userObject.user
-        const userID = user.uid
+        const user = userObject.user;
+        const userID = user.uid;
+
+        const docRef = doc(database, "users", userID);
+        
+        const data = {
+            email: userEmail,
+            password: userPassword,
+            
+        }
+
+        await setDoc(docRef, );
+
     } catch(error){
 
     }
